@@ -27,10 +27,11 @@ public class MyPageViewHandler {
             MyPage myPage = new MyPage();
             // view 객체에 이벤트의 Value 를 set 함
             myPage.setOrderId(orderPlaced.getId());
-            myPage.setUserId(Long.valueOf(orderPlaced.getCustomerId()));
             myPage.setProductId(orderPlaced.getProductId());
             myPage.setProductName(orderPlaced.getProductName());
             myPage.setQty(orderPlaced.getQty());
+            myPage.setCustomerId(orderPlaced.getCustomerId());
+            myPage.setStatus(orderPlaced.getStatus());
             // view 레파지 토리에 save
             myPageRepository.save(myPage);
         } catch (Exception e) {

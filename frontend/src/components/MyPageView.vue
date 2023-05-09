@@ -22,12 +22,12 @@
         data: () => ({
             headers: [
                 { text: "id", value: "id" },
-                { text: "orderId", value: "orderId" },
-                { text: "userId", value: "userId" },
+                { text: "customerId", value: "customerId" },
                 { text: "productName", value: "productName" },
                 { text: "productId", value: "productId" },
                 { text: "qty", value: "qty" },
                 { text: "status", value: "status" },
+                { text: "orderId", value: "orderId" },
             ],
             myPage : [],
         }),
